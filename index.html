@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Html Tag reference</title>
+		<base href="images/">
+		<base href="audios/">
+		<base href="php/">
+	</head>
+	<body>
+		<!--Coment in html.-->
+		<a href="first_page.html">Go to first page</a><br/>
+		<a href="https;//www.google.com">Go to google</a><br/>
+		<abbr title="World Health Organization">W.H.O.</abbr><br/>
+		<address>Address Tag</address><br/>
+		<img src="hyperlink.jpg" alt="hyperlink" usemap="#hyperlink"/>
+		<map name="hyperlink">
+			<area shape="rect" coords="91,13,170,41" href="first_page.html"/>
+			<area shape="circle" coords="89,72,24" href="second_page.html"/>
+			<area shape="poly" coords="139,67,139,92,166,105,193,92,193,67,166,53" href="third_page.html"/>
+		</map><br/>
+		<audio controls>
+			<source src="Ekhon onek rat.mp3" type="audio/mp3">
+		</audio><br/>
+		<audio controls autoplay>
+			<source src="Ekhon onek rat.mp3" type="audio/mp3">
+		</audio><br/>
+		<audio controls loop>
+			<source src="Ekhon onek rat.mp3" type="audio/mp3">
+		</audio><br/>
+		<audio controls muted>
+			<source src="Ekhon onek rat.mp3" type="audio/mp3">
+		</audio><br/>
+		<audio controls preload="none">
+			<source src="Ekhon onek rat.mp3" type="audio/mp3">
+		</audio><br/>
+		<audio controls preload="metadata">
+			<source src="Ekhon onek rat.mp3" type="audio/mp3">
+		</audio>
+		<article>
+			<img src="natural_scene.jpeg" height="360px" width="360px" alt="natural_scene" title="natural_scene"/>
+			<h2>Natural scene</h2>
+			<time>12/8/1018 9:04pm</time>
+		</article>
+		<article>
+			<img src="natural_scene_2.jpeg" height="360px" width="360px" alt="natural_scene_2" title="natural_scene_2"/>
+			<h2>Natural scene</h2>
+			<time>12/8/2018 9:12pm</time>
+		</article>
+		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+		<aside>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+		</aside>
+		<b>This is a bold tag.</b><br/>
+		<img src="natural_scene.jpeg" alt="image for base tag" title="image for base tag"/><br/>
+		<img src="natural_scene_2.jpeg" alt="image for base tag" title="image for base tag"/><br/>
+		<bdo dir="ltr">Lorem Ipsum is simply dummy text of <bdi>the printing</bdi> and typesetting industry.</bdo><br/>
+		<bdo dir="rtl">Lorem Ipsum is simply dummy text of <bdi>the printing</bdi> and typesetting industry.</bdo><br/>
+		<blockquote>
+			<p>This is a blockquote tag.</p>
+		</blockquote>
+		<a href="https://www.google.com"><button>Google</button></a><br/>
+		<a href="https://www.google.com"><button autofocus="autofocus">Google</button></a><br/>
+		<a href="https://www.google.com"><button disabled="disabled">Google</button></a><br/>
+		<a href="https://www.google.com"><button style="color: red;border-radius: 10px">Google</button></a><br/>
+		<a href="natural_scene.jpeg"><button style="color: red;border-radius: 10px"><img src="natural_scene.jpeg" height="100px" width="100px" alt="natural_scene" title="natural_scene"/></button></a><br/>
+		<button type="button" onclick="alert('this is my first project')">Click me</button><br/>
+		<form name="student_form" id="form" action="index.php" method="get">
+			<h1>Student Form</h1>
+			<p>First Name:<input type="text" name="first_name" id="first_name" placeholder="first name" required/></p>
+			<p>Last Name:<input type="text" name="last_name" id="last_name" placeholder="last name" required/></p>
+			<p>Nick Name:<input type="text" name="nick_name" id="nick_name" maxlength="5" value="nick name"/></p>
+			<p>Email    :<input type="email" name="email" id="email" placeholder="email" required/></p>
+			<p>Password :<input type="password" name="password" id="password" placeholder="password" maxlength="5" size="5px" required/></p>
+			<p><label>Chose a file:</label>
+			<input type="file" name="uploadfile" id="uploadfile"/></p>
+			<button type="submit" value="submit">Submit</button><br/>
+			<button type="reset" value="reset">Reset</button><br/>
+			formaction attribute:<br/>
+			<button type="submit" value="submit" formaction="formaction.php">Submit</button><br/>
+			Formtarget attribute:<br/>
+			<button type="submit" value="submit" formtarget="_blank">submit</button><br/>
+			Submit in this site:<br/>
+			<button name="site" type="submit" value="google">google</button><br/>
+			<button name="site" type="submit" value="youtube">Youtube</button><br/>
+			Formenctype attribute:<br/>
+			<input type="text" name="search"/>
+			<button type="submit" formenctype="text/plain">search</button><br/>
+			Formmethod attribute:<br/>
+			<button type="submit" formmethod="post">submit</button><br/>
+			<button type="submit" formmethod="get" formaction="formaction.php">Submit</button><br/>
+			Formnovalidate attribute:<br/>
+			<button type="submit" formnovalidate>Submit</button>
+		</form>
+		Submit from outside of tag:<br/>
+		<button type="submit" value="submit" form="student_form">submit</button><br/>
+		<table border="2ps">
+			<caption>Table-1</caption>
+			<thead>
+				<tr>
+					<th colspan="2">thead</th>
+				</tr>
+			</thead>
+			<tfoot>
+				<tr>
+					<th colspan="2">tfoot</th>
+				</tr>
+			</tfoot>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>2</td>
+				</tr>
+			</tbody>
+		</table><br/>
+		<img src="natural_scene.jpeg" alt="natural_scene" title="natural_scene"/>
+		<p>This is an image of <cite>natural scene</cite>.</p>
+		<code>This is a code tag.</code>
+	</body>
+</html>-
