@@ -60,9 +60,16 @@
 		<bdo dir="ltr">Lorem Ipsum is simply dummy text of <bdi>the printing</bdi> and typesetting industry.</bdo><br/>
 		<bdo dir="rtl">Lorem Ipsum is simply dummy text of <bdi>the printing</bdi> and typesetting industry.</bdo><br/>
 		<blockquote cite="www.google.com">
-			<p>The <blockquote> tag specifies a section that is quoted from another source.
-
-Browsers usually indent <blockquote> elements.</p>
+			<p>
+				Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+				Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+				when an unknown printer took a galley of type and scrambled it to make a type 
+				specimen book. It has survived not only five centuries, but also the leap into 
+				electronic typesetting, remaining essentially unchanged. It was popularised in 
+				the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+				and more recently with desktop publishing software like Aldus PageMaker including 
+				versions of Lorem Ipsum.
+			</p>
 		</blockquote>
 		<a href="https://www.google.com"><button>Google</button></a><br/>
 		<a href="https://www.google.com"><button autofocus>Google</button></a><br/>
@@ -363,6 +370,39 @@ Browsers usually indent <blockquote> elements.</p>
 		<embed src="Ekhon onek rat.mp3" type="audio/mpeg" hright="100px" width="300px" border="2px" alt="this is an audio"/><br/>
 		<embed src="Ekhon onek rat.mp3" type="audio/mpeg" hright="100px" width="300px" border="2px" alt="this is an audio"  title="this is an audio"/><br/>
 		<embed src="Ekhon onek rat.mp3" type="audio/mpeg" hright="100px" width="300px" border="2px" alt="this is an audio"  title="this is an audio" autostart="true"/><br/>
-		<embed src="Ekhon onek rat.mp3" type="audio/mpeg" hright="100px" width="300px" border="2px" alt="this is an audio"  title="this is an audio" autostart="false"/><br/>	
+		<embed src="Ekhon onek rat.mp3" type="audio/mpeg" hright="100px" width="300px" border="2px" alt="this is an audio"  title="this is an audio" autostart="false"/><br/>
+		<form>
+  			<fieldset>
+    				<legend>Personalia:</legend>
+    				Name: <input type="text"><br>
+    				Email: <input type="text"><br>
+    				Date of birth: <input type="text">
+  			</fieldset>
+		</form>
+		<form>
+  			<fieldset disabled>
+    				<legend>Personalia:</legend>
+    				Name: <input type="text"><br>
+    				Email: <input type="text"><br>
+    				Date of birth: <input type="text">
+  			</fieldset>
+		</form>
+		<form action="index.php" method="get" id="form1">
+  			What is your favorite color? 
+			<input type="text" name="fav_color"><br>
+  			<input name="submit" id="submit" type="submit"/>
+		</form>
+		<fieldset form="form1">
+  			Name: <input type="text" name="username"><br>
+  			Email: <input type="text" name="usermail"><br>
+		</fieldset>
+		<form>
+  			<fieldset name="Jesan">
+    				<legend>Personalia:</legend>
+    				Name: <input type="text"><br>
+    				Email: <input type="text"><br>
+    				Date of birth: <input type="text">
+  			</fieldset>
+		</form>
 	</body>
 </html>
