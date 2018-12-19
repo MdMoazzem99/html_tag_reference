@@ -443,5 +443,45 @@
     				Date of birth: <input type="text">
   			</fieldset>
 		</form>
+		<figure>
+  			<img src="natural_scene.jpeg" alt="natural_scene" title="natural_scene" style="width: 100%";/>
+  			<figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+		</figure>
+		<footer>
+  			<p>Posted by: Hege Refsnes</p>
+  			<p>
+				Contact information: <a href="mailto:someone@example.com">someone@example.com</a>.
+			</p>
+		</footer>
+		<form action="index.php">
+  			First name: <input type="text" name="fname"><br>
+  			Last name: <input type="text" name="lname"><br>
+  			<input type="submit" value="Submit">
+		</form>
+		<form action="index.php" method="get">
+  			First name: <input type="text" name="fname"><br>
+  			Last name: <input type="text" name="lname"><br>
+  			<input type="submit" value="Submit">
+		</form>
+		<form action="index.php" method="post">
+  			First name: <input type="text" name="fname"><br>
+  			Last name: <input type="text" name="lname"><br>
+  			<input type="submit" value="Submit">
+		</form>
+		<form action="index.php" method="get" accept-charset="UTF-8">
+  			First name: <input type="text" name="fname"><br>
+  			Last name: <input type="text" name="lname"><br>
+  			<input type="submit" value="Submit">
+		</form>
+		<form action="index.php" method="get" autocomplete="on">
+  			First name:<input type="text" name="fname"><br>
+  			E-mail: <input type="email" name="email"><br>
+  			<input type="submit">
+		</form>
+		<form action="index.php" method="get" autocomplete="off">
+  			First name:<input type="text" name="fname"><br>
+  			E-mail: <input type="email" name="email"><br>
+  			<input type="submit">
+		</form>
 	</body>
 </html>
